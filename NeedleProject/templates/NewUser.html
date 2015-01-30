@@ -1,0 +1,40 @@
+﻿<h3>Create New User</h3>
+<form name="profileForm">
+	<div class="row ">
+		<div class="col-md-3 well">
+
+			<fieldset>
+				<label for="userName">Name:</label><br />
+				<input name="userName" id="userName" type="text" ng-required="true" ng-pattern="/^(\D)+$/" ng-model="user.userName" placeholder="Name"/>
+				<br/>
+				<span class="text-danger" ng-show="profileForm.userName.$error.required  && user.userName !==undefined">
+					Required!
+				</span>
+				<span class="text-danger" ng-show="profileForm.userName.$error.pattern">
+					Text Only Please!
+				</span>
+
+			</fieldset>
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-md-3 well">
+			<label for="emailAddress">Email Address:</label>
+			<input id="emailAddress" name="emailAddress" type="email" ng-required="true" ng-model="user.emailAddress" placeholder="Email Address"/>
+			<br />
+			<span class="text-danger" ng-show="profileForm.emailAddress.$error.required && user.emailAddress !==undefined">
+				Required!
+			</span>
+			<span class="text-danger" ng-show="profileForm.emailAddress.$error.email">
+				Not valid email!
+			</span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 well">
+			<button type="button" class="btn btn-default" ng-click="cancelEditProfile()">Cancel</button>
+			<button type="submit" class="btn btn-success pull-right" ng-click="saveProfile(user)" ng-disabled="!profileForm.$valid">Save</button>
+		</div>
+	</div>
+</form>

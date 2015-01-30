@@ -1,0 +1,6 @@
+c:\users\zhengb\documents\visual studio 2013\Projects\NeedleProject\NeedleProject\bin\NeedleProject.dll.config
+c:\users\zhengb\documents\visual studio 2013\Projects\NeedleProject\NeedleProject\bin\NeedleProject.dll
+c:\users\zhengb\documents\visual studio 2013\Projects\NeedleProject\NeedleProject\bin\NeedleProject.pdb
+c:\users\zhengb\documents\visual studio 2013\Projects\NeedleProject\NeedleProject\obj\Debug\NeedleProject.csprojResolveAssemblyReference.cache
+c:\users\zhengb\documents\visual studio 2013\Projects\NeedleProject\NeedleProject\obj\Debug\NeedleProject.dll
+c:\users\zhengb\documents\visual studio 2013\Projects\NeedleProject\NeedleProject\obj\Debug\NeedleProject.pdb
