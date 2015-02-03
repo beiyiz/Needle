@@ -1,19 +1,21 @@
 ﻿'use strict';
 
 var needleApp = angular.module('needleApp', ['ngSanitize', 'ngResource', 'ngRoute'])
-	.config(function($routeProvider, $locationProvider) {
+	.config(function ($routeProvider, $locationProvider) {
 		$routeProvider.when('/newUser',
 			{
 				templateUrl: 'templates/NewUser.html',
 				controller: 'EditUserController'
 			}
 		);
+
 		$routeProvider.when('/',
 			{
 				templateUrl: 'templates/UserList.html',
 				controller: 'UserListController'
 			}
 		);
+
 		//$routeProvider.when('/user/:userId',
 		//	{
 		//		templateUrl: 'templates/EditUser.html',
@@ -28,6 +30,6 @@ var needleApp = angular.module('needleApp', ['ngSanitize', 'ngResource', 'ngRout
 		//);
 
 		$routeProvider.otherwise({ redirectTo: '/' });
-		//$locationProvider.html5Mode(true);
+		$locationProvider.html5Mode(true);
 	});
     
